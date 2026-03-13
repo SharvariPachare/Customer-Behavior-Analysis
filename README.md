@@ -4,162 +4,104 @@
 
 This project analyzes customer shopping behavior using transactional data from 3,900 purchases across multiple product categories.
 
-The objective was to uncover insights related to:
+The goal was to understand revenue patterns, customer segmentation, product performance, and subscription behavior to support better business decisions.
 
-Revenue patterns
+The project was developed using Python, MySQL, and Power BI.
 
-Customer segmentation
+🛠️ Tools & Technologies
 
-Product performance
+Python (Pandas)
 
-Subscription behavior
+MySQL
 
-The project follows an end-to-end workflow using Python, MySQL, and Power BI for data preparation, analysis, and visualization.
-
-🛠️ Tech Stack
-
-Python – Data cleaning & feature engineering
-
-MySQL – Business analysis using SQL
-
-Power BI – Interactive dashboard & visualization
+Power BI
 
 📊 Dataset Summary
 
-Total Records: 3,900
+Records: 3,900
 
-Total Features: 18
+Features: 18
 
-Key Categories
+The dataset includes customer demographics, purchase details, and behavioral attributes such as discount usage, review ratings, shipping type, and subscription status.
 
-Customer Information
-
-Age
-
-Gender
-
-Location
-
-Subscription Status
-
-Purchase Details
-
-Item Purchased
-
-Category
-
-Purchase Amount
-
-Season
-
-Size
-
-Color
-
-Behavioral Data
-
-Discount Applied
-
-Promo Code Used
-
-Previous Purchases
-
-Frequency of Purchases
-
-Review Rating
-
-Shipping Type
-
-Data Cleaning Note
+🧹 Data Cleaning
 
 37 missing values were found in the Review Rating column.
 
-🔄 Data Preparation
+Missing values were filled using category-wise median.
 
-Performed using Python (Pandas):
+Redundant column (promo_code_used) was removed.
 
-Explored dataset structure and summary statistics
+🔧 Feature Engineering
 
-Handled missing values by filling review ratings using category-wise median
-
-Standardized column names to snake_case
-
-Removed redundant column (promo_code_used)
-
-Created new features:
+New features created:
 
 age_group
 
 purchase_frequency_days
 
-After cleaning, the dataset was imported into MySQL for further analysis.
-
 🧮 SQL Analysis
 
-The following business questions were answered using SQL:
+The following business questions were explored:
 
 Revenue comparison by gender
 
-Revenue analysis: subscribers vs non-subscribers
+Subscriber vs non-subscriber revenue
 
-Identification of high-spending customers using discounts
+High-spending customers
 
-Top products based on average rating
+Top-rated products
 
 Revenue contribution by age group
 
-Category-wise top-selling products
+Category-wise top products
 
-Impact of shipping type on purchase amount
+Shipping type impact
 
 Customer segmentation (New, Returning, Loyal)
 
 Discount usage patterns
 
-📈 Power BI Dashboard
+📈 Dashboard
 
-An interactive dashboard was created to visualize key insights, including:
+An interactive Power BI dashboard was created to visualize:
 
-Key Performance Indicators (KPIs)
+Revenue trends
 
-Revenue breakdown by gender
+Customer segments
 
-Category-wise performance analysis
+Product performance
 
-Customer segmentation
+Category analysis
 
-Subscription impact on revenue
+Subscription impact
 
-Product performance insights
+🔍 Key Insights
 
-💡 Key Insights
-
-Clear revenue differences across customer segments
+Revenue varies across customer segments
 
 Subscription status influences purchasing behavior
 
-Certain age groups contribute significantly to overall revenue
+Certain age groups contribute significantly to revenue
 
 Discount strategies impact product performance
 
 Top-rated products align with high sales categories
 
-📌 Business Recommendations
+💡 Business Impact
 
-Encourage subscriptions through exclusive benefits
+The analysis supports:
 
-Introduce loyalty programs for repeat customers
+Improved subscription strategies
 
-Optimize discount strategies to maintain profit balance
+Better customer loyalty programs
 
-Promote high-rated and best-selling products
+Optimized discount policies
 
-Focus marketing efforts on high-revenue age groups
+Targeted marketing decisions
 
-🎯 Project Outcome
+Enhanced product positioning
 
-This project demonstrates an end-to-end data analysis workflow:
+🔄 Project Workflow
 
-Data Cleaning → Feature Engineering → SQL Analysis → Dashboard Visualization → Business Insights
-
-It highlights practical skills in data handling, querying, and building business-focused dashboards.
+Data Cleaning → Feature Engineering → SQL Analysis → Dashboard → Business Insights
