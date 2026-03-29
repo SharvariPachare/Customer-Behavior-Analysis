@@ -1,107 +1,64 @@
-# Customer-Behavior-Analysis
-🛍️ Customer Shopping Behavior Analysis
+🛍️ Customer Shopping Behavior Analysis:
+
 📌 Overview
+This project is about understanding how customers shop and what influences their buying decisions. The goal was to explore customer data and find patterns that can help a business improve sales, customer experience, and overall strategy.
+I worked on the complete pipeline, from cleaning raw data to building a dashboard and presenting insights. The idea was to answer a simple but important question:
+How can customer data be used to improve business decisions?
 
-This project analyzes customer shopping behavior using transactional data from 3,900 purchases across multiple product categories.
+📊 Dataset
+~3,900 customer transactions
+18 columns covering demographics, purchase details, and behavior
+The dataset includes:
+Customer info (age, gender, subscription status)
+Purchase details (product, category, amount, season, etc.)
+Behavior insights (discount usage, reviews, frequency of purchases)
+There were a few missing values in the review ratings, which I handled during the data cleaning stage.
 
-The goal was to understand revenue patterns, customer segmentation, product performance, and subscription behavior to support better business decisions.
+🛠️ Tools Used
+Python (Pandas, NumPy, Matplotlib) → data cleaning & EDA
+SQL (MySQL) → querying & analysis
+Power BI → dashboard creation
+Gamma → presentation
+Jupyter Notebook → development
 
-The project was developed using Python, MySQL, and Power BI.
-
-🛠️ Tools & Technologies
-
-Python (Pandas)
-
-MySQL
-
-Power BI
-
-📊 Dataset Summary
-
-Records: 3,900
-
-Features: 18
-
-The dataset includes customer demographics, purchase details, and behavioral attributes such as discount usage, review ratings, shipping type, and subscription status.
-
-🧹 Data Cleaning
-
-37 missing values were found in the Review Rating column.
-
-Missing values were filled using category-wise median.
-
-Redundant column (promo_code_used) was removed.
-
-🔧 Feature Engineering
-
-New features created:
-
-age_group
-
-purchase_frequency_days
-
-🧮 SQL Analysis
-
-The following business questions were explored:
-
-Revenue comparison by gender
-
-Subscriber vs non-subscriber revenue
-
-High-spending customers
-
-Top-rated products
-
-Revenue contribution by age group
-
-Category-wise top products
-
-Shipping type impact
-
-Customer segmentation (New, Returning, Loyal)
-
-Discount usage patterns
+⚙️ What I Did
+1. Data Cleaning & Preparation (Python)
+Loaded and explored the dataset
+Handled missing values
+Renamed columns for better readability
+Created new features like age groups and purchase frequency
+Cleaned and prepared the data for analysis
+2. Exploratory Data Analysis
+Looked at spending patterns
+Compared customer groups
+Analyzed product performance and ratings
+3. SQL Analysis
+I used SQL to answer practical business questions like:
+Who generates more revenue — male or female customers?
+Do discounts actually increase spending?
+Which products are rated the highest?
+Do subscribers spend more than non-subscribers?
+How can customers be segmented (new, returning, loyal)?
 
 📈 Dashboard
-
-An interactive Power BI dashboard was created to visualize:
-
-Revenue trends
-
-Customer segments
-
+I built an interactive Power BI dashboard to make the insights easy to understand. It includes:
+Revenue breakdowns
+Customer segmentation
 Product performance
-
-Category analysis
-
-Subscription impact
+Subscription and shipping insights
 
 🔍 Key Insights
+Female customers contribute slightly more to total revenue
+Clothing is the top-performing category
+Most customers fall into the “loyal” segment
+Non-subscribers generate more revenue, but subscribers show better long-term potential
+Discounts do impact purchases, but need to be used carefully
+Young adults are one of the highest revenue-generating groups
 
-Revenue varies across customer segments
-
-Subscription status influences purchasing behavior
-
-Certain age groups contribute significantly to revenue
-
-Discount strategies impact product performance
-
-Top-rated products align with high sales categories
-
-💡 Business Impact
-
-The analysis supports:
-
-Improved subscription strategies
-
-Better customer loyalty programs
-
-Optimized discount policies
-
-Targeted marketing decisions
-
-Enhanced product positioning
-
-🔄 Project Workflow
-
-Data Cleaning → Feature Engineering → SQL Analysis → Dashboard → Business Insights
+💡 What Can Be Improved
+Based on the analysis:
+Focus on converting repeat buyers into subscribers
+Build loyalty programs to retain customers
+Be more strategic with discounts
+Promote top-performing and highly rated products
+Target high-value customer segments more effectively
